@@ -1,0 +1,96 @@
+.container
+  .position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-light
+    .col-md-7.p-lg-7.mx-auto.my-7
+      %h1.display-4.fw-normal Корпоративный рокетчат
+      %p.lead.fw-normal Ты находишься в корпоративном чате ServiceGuru. Здесь мы все вместе занимаемся разработкой и развитием продукта ServiceGuru и сопровождающих его инструментов.
+  .row
+    .col-lg-4.col-md-6
+      .card
+        %img.card-img-top{ src: 'https://media.giphy.com/media/3ornk57KwDXf81rjWM/giphy.gif' }
+        .card-body
+          %h5.card-title
+            Ты здесь впервые?
+          %p
+            Если ты зашёл в первый раз, напиши в чат #general приветственное сообщение! Потом тебя добавят в чаты твоей команды.
+          %a.btn.btn-primary{ href: 'https://chat.service.guru/channel/general' }
+            Чат #general
+
+
+    .col-lg-4.col-md-6
+      .card
+        %img.card-img-top{ src: 'data:image/jpeg;base64, #THREAD_ICON' }
+        .card-body
+          %h5.card-title
+            Треды
+          %p
+            это потрясающая функциональность, позволяющая в одном чате разделять обсуждение разных вопросов на логические блоки. Старайся всегда использовать треды.
+    .col-lg-4.col-md-6
+      .card
+        %img.card-img-top{ src: 'data:image/jpeg;base64, #GET_IT_ON_GOOGLE_PLAY' }
+        .card-body
+          %h5.card-title
+            Установи мобильное приложение Rocket.Chat
+          %p
+            Рокетчатом удобно пользоваться на мобильных устройствах! Приложение Rocket.Chat доступно для Android и iOS. После установки введи адрес сервера https://chat.service.guru и пройди авторизацию пользователя.
+          %a.btn.btn-primary{ href: 'https://play.google.com/store/apps/details?id=chat.rocket.android' }
+            Android
+          %a.btn.btn-primary{ href: 'https://apps.apple.com/us/app/rocket-chat/id1148741252' }
+            iOS
+    .col-lg-4.col-md-6
+      .card
+        %img.card-img-top{ src: 'data:image/jpeg;base64, #AVATAR' }
+        .card-body
+          %h5.card-title
+            Установи свою аватарку
+          %p
+            А теперь зайди в настройки своего профиля, проверь всё ли тебя устраивает и ОБЯЗАТЕЛЬНО добавь свою аватарку!
+          %a.btn.btn-primary{ href: 'https://chat.service.guru/account/profile' }
+            Настройки профиля
+
+  %hr
+
+  .row.mb-4
+    .col
+      %h2.mb-4
+        Список чатов и каналов
+      .list-group
+        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: "https://chat.service.guru/channel/general"}
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #SG_LOGO_MIN' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 #general
+                %small Открытый
+              %p.mb-1 В этом чате следует писать только новости продукта, которые важны всем в команде, а также важные уведомления.
+              %small Вся команда ServiceGuru
+        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: "https://chat.service.guru/channel/jira"}
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #JIRA_LOGO_MIN' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 #jira
+                %small Открытый
+              %p.mb-1 В этом канале приходят уведомления об изменении статуса задач в Jira. Таким образом мы можем оперативно получать информацию о переходе задач из статуса в статус
+              %small Разработка и Поддержка
+        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: "https://chat.service.guru/channel/sentry"}
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #SENTRY_LOGO_MIN' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 #sentry
+                %small Открытый
+              %p.mb-1 В этом канале приходят уведомления о проблемах кода на бекенде. Все новые ошибки Ruby-кода и некоторые ошибки Javascript-кода приходят туда.
+              %small Веб-разработчики
+        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: "https://chat.service.guru/channel/deploy"}
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #GITLAB_LOGO_MIN' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 #deploy
+                %small Открытый
+              %p.mb-1 В этом канале приходят уведомления о деплоях на сервера production, dev и dev2.
+              %small Веб-разработчики
