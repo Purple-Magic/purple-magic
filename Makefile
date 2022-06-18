@@ -11,6 +11,8 @@ build_home_page:
 		--volume "${PWD}/home_page/images/get_it_on_google_play.base64:/get_it_on_google_play.base64" \
 		--volume "${PWD}/home_page/images/avatar.base64:/avatar.base64" \
 		--volume "${PWD}/home_page/images/sg_logo_min.base64:/sg_logo_min.base64" \
+		--volume "${PWD}/home_page/images/purple_magic_logo.base64:/purple_magic_logo.base64" \
+		--volume "${PWD}/home_page/images/red_magic_logo.base64:/red_magic_logo.base64" \
 		ruby ruby insert_images.rb home_page_build.haml
 	docker run --rm --volume "${PWD}:/app" kalashnikovisme/haml-docker /app/home_page_build.haml > home_page.html
 	xclip -sel clip < home_page.html

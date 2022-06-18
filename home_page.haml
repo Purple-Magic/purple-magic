@@ -2,7 +2,26 @@
   .position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-light
     .col-md-7.p-lg-7.mx-auto.my-7
       %h1.display-4.fw-normal Рабочий чат
-      %p.lead.fw-normal Здесь мы обсуждаем рабочие моменты, а также это наше сейф-плейс.
+      %p.lead.fw-normal Здесь мы обсуждаем рабочие моменты, а также это наше сейф-плейс. Здесь работают две тесносвязанные друг с другом команды.
+  .row.mb-4
+    .col
+      .list-group
+        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: 'http://purple-magic.com'}
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #PURPLE_MAGIC_LOGO' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 Purple Magic
+              %p.mb-1 Разработка програмного обеспечения (WEB), контент-менеджмент, управлением проектами.
+        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: 'https://vk.com/redmagicprod'}
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #RED_MAGIC_LOGO' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 RED MAGIC
+              %p.mb-1 Съёмка видео, монтаж видео, организация и проведение стримов и прямых трансляций, когда-нибудь 3D.
   .row
     .col-lg-4.col-md-6
       .card
@@ -46,51 +65,3 @@
             А теперь зайди в настройки своего профиля, проверь всё ли тебя устраивает и ОБЯЗАТЕЛЬНО добавь свою аватарку!
           %a.btn.btn-primary{ href: 'https://rocket.purple-magic.com/account/profile' }
             Настройки профиля
-
-  %hr
-
-  .row.mb-4
-    .col
-      %h2.mb-4
-        Список чатов и каналов
-      .list-group
-        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: "https://rocket.purple-magic.com/channel/general"}
-          .row
-            .col-md-1
-              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #SG_LOGO_MIN' }
-            .col
-              .d-flex.w-80.justify-content-between
-                %h5.mb-1 #general
-                %small Открытый
-              %p.mb-1 В этом чате следует писать только новости продукта, которые важны всем в команде, а также важные уведомления.
-              %small Вся команда ServiceGuru
-        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: "https://rocket.purple-magic.com/channel/jira"}
-          .row
-            .col-md-1
-              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #JIRA_LOGO_MIN' }
-            .col
-              .d-flex.w-80.justify-content-between
-                %h5.mb-1 #jira
-                %small Открытый
-              %p.mb-1 В этом канале приходят уведомления об изменении статуса задач в Jira. Таким образом мы можем оперативно получать информацию о переходе задач из статуса в статус
-              %small Разработка и Поддержка
-        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: "https://rocket.purple-magic.com/channel/sentry"}
-          .row
-            .col-md-1
-              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #SENTRY_LOGO_MIN' }
-            .col
-              .d-flex.w-80.justify-content-between
-                %h5.mb-1 #sentry
-                %small Открытый
-              %p.mb-1 В этом канале приходят уведомления о проблемах кода на бекенде. Все новые ошибки Ruby-кода и некоторые ошибки Javascript-кода приходят туда.
-              %small Веб-разработчики
-        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: "https://rocket.purple-magic.com/channel/deploy"}
-          .row
-            .col-md-1
-              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #GITLAB_LOGO_MIN' }
-            .col
-              .d-flex.w-80.justify-content-between
-                %h5.mb-1 #deploy
-                %small Открытый
-              %p.mb-1 В этом канале приходят уведомления о деплоях на сервера production, dev и dev2.
-              %small Веб-разработчики

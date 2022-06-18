@@ -5,6 +5,8 @@ images = [
   :get_it_on_google_play,
   :avatar,
   :sg_logo_min,
+  :purple_magic_logo,
+  :red_magic_logo,
 ]
 images.each do |image|
   image_base64 = File.read("#{image}.base64")
