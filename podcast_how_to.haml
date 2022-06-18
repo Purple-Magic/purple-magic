@@ -28,7 +28,7 @@
             Подкаст IT Way записывается онлайн.
           %p
             Поэтому важно иметь хороший доступ в интернет. Представь, что готовишься к стриму в Youtube.
-    .col-lg-4.col-md-6
+    .col-lg-4.col-md-12
       .card
         %img.card-img-top{ src: 'data:image/jpeg;base64, #RED_MAGIC_LOGO' }
         .card-body
@@ -38,13 +38,50 @@
             Ты можешь записывать свой подкаст в онлайне с автоматическим монтажом и публикацией, как это делает IT Way Podcast и ещё несколько других интересных проектов. Главное для подкаста - это регулярность. С помощью платформы от RED MAGIC можно обеспечить эту регулярность.
           %a.btn.btn-primary{ href: 'https://t.me/kalashnikovisme' }
             Связаться с RED MAGIC
-    .col-lg-4.col-md-6
-      .card
-        %img.card-img-top{ src: 'data:image/jpeg;base64, #AVATAR' }
-        .card-body
-          %h5.card-title
-            Установи свою аватарку
-          %p
-            А теперь зайди в настройки своего профиля, проверь всё ли тебя устраивает и ОБЯЗАТЕЛЬНО добавь свою аватарку!
-          %a.btn.btn-primary{ href: 'https://rocket.purple-magic.com/account/profile' }
-            Настройки профиля
+  %hr
+  .row.mb-4
+    %h2.mb-4
+      Для участия в записи нужно
+    .col
+      .list-group
+        %a.list-group-item.list-group-item-action
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/veselo.png' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 Компьютер подключенный к интернету 
+              %p.mb-1 Интернет должен быть достаточно стабильный для онлайн-звонков.
+        %a.list-group-item.list-group-item-action
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/47fb1fc0-ed07-4f76-a5fd-37dcdf53caea_5d09944c-81fd-49b7-b696-583c75b4004f_logo.jpg' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 Микрофон
+              %p.mb-1 В идеале студийный вещательный, но как показывает практика, запись с петличек и гарнитур, подключённых к компьютеру делает достаточное качество записи. Постарайся использовать лучший микрофон, что есть в твоём доступе.
+        %a.list-group-item.list-group-item-action
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/podkast-little-size.jpg' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 Наушники
+              %p.mb-1 ОБЯЗАТЕЛЬНО!
+        %a.list-group-item.list-group-item-action
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/topooooor.png' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 Тихое помещение
+              %p.mb-1 Слушателям сложно воспринимать речь, когда присутствуют дополнительные шумы и разговоры. Минимальное требование: ты должен быть единственным говорящим человеком в комнате, в которой записываешься. В идеале это должна быть студия звукозаписи или комната, обвешанная коврами.
+        %a.list-group-item.list-group-item-action{ href: 'https://www.mumble.com/mumble-download.php', target: '_blank' }
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/1200px-Icons_mumble.svg.png' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 ЗАРАНЕЕ установленное приложение Mumble
+              %p.mb-1
+                Это бесплатное приложение. Если возникнут проблемы с установкой, обращайся к пригласившему тебя ведущему. Данные для подключения к серверу тебе скинет пригласивший ведущий за 10 минут до записи. Там всё просто. Нажмите, чтобы скачать.
