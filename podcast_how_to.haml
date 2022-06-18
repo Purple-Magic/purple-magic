@@ -1,0 +1,67 @@
+.container
+  .position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-light
+    .col-md-7.p-lg-7.mx-auto.my-7
+      %h1.display-4.fw-normal Рабочий чат
+      %p.lead.fw-normal Здесь мы обсуждаем рабочие моменты, а также это наше сейф-плейс. Здесь работают две тесносвязанные друг с другом команды.
+  .row.mb-4
+    .col
+      .list-group
+        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: 'http://purple-magic.com'}
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #PURPLE_MAGIC_LOGO' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 Purple Magic
+              %p.mb-1 Разработка програмного обеспечения (WEB), контент-менеджмент, управлением проектами.
+        %a.list-group-item.list-group-item-action{"aria-current" => "true", href: 'https://vk.com/redmagicprod'}
+          .row
+            .col-md-1
+              %img{ style: 'width: 100%', src: 'data:image/jpeg;base64, #RED_MAGIC_LOGO' }
+            .col
+              .d-flex.w-80.justify-content-between
+                %h5.mb-1 RED MAGIC
+              %p.mb-1 Съёмка видео, монтаж видео, организация и проведение стримов и прямых трансляций, когда-нибудь 3D.
+  .row
+    .col-lg-4.col-md-6
+      .card
+        %img.card-img-top{ src: 'https://media.giphy.com/media/3ornk57KwDXf81rjWM/giphy.gif' }
+        .card-body
+          %h5.card-title
+            Ты здесь впервые?
+          %p
+            Если ты зашёл в первый раз, напиши в чат #general приветственное сообщение! Потом тебя добавят в чаты твоей команды.
+          %a.btn.btn-primary{ href: 'https://rocket.purple-magic.com/channel/general' }
+            Чат #general
+
+
+    .col-lg-4.col-md-6
+      .card
+        %img.card-img-top{ src: 'data:image/jpeg;base64, #THREAD_ICON' }
+        .card-body
+          %h5.card-title
+            Треды
+          %p
+            это потрясающая функциональность, позволяющая в одном чате разделять обсуждение разных вопросов на логические блоки. Старайся всегда использовать треды.
+    .col-lg-4.col-md-6
+      .card
+        %img.card-img-top{ src: 'data:image/jpeg;base64, #GET_IT_ON_GOOGLE_PLAY' }
+        .card-body
+          %h5.card-title
+            Установи мобильное приложение Rocket.Chat
+          %p
+            Рокетчатом удобно пользоваться на мобильных устройствах! Приложение Rocket.Chat доступно для Android и iOS. После установки введи адрес сервера https://rocket.purple-magic.com и пройди авторизацию пользователя.
+          %a.btn.btn-primary{ href: 'https://play.google.com/store/apps/details?id=chat.rocket.android' }
+            Android
+          %a.btn.btn-primary{ href: 'https://apps.apple.com/us/app/rocket-chat/id1148741252' }
+            iOS
+    .col-lg-4.col-md-6
+      .card
+        %img.card-img-top{ src: 'data:image/jpeg;base64, #AVATAR' }
+        .card-body
+          %h5.card-title
+            Установи свою аватарку
+          %p
+            А теперь зайди в настройки своего профиля, проверь всё ли тебя устраивает и ОБЯЗАТЕЛЬНО добавь свою аватарку!
+          %a.btn.btn-primary{ href: 'https://rocket.purple-magic.com/account/profile' }
+            Настройки профиля

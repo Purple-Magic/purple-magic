@@ -3,7 +3,7 @@ install:
 	docker pull ruby:3.1
 
 build_home_page:
-	./fill_home_page.sh
+	FILE=home_page ./add_bootstrap_stylesheets.sh
 	docker run --rm \
 		--volume "${PWD}/insert_images.rb:/insert_images.rb" \
 		--volume "${PWD}/home_page_build.haml:/home_page_build.haml" \
@@ -17,3 +17,14 @@ build_home_page:
 	docker run --rm --volume "${PWD}:/app" kalashnikovisme/haml-docker /app/home_page_build.haml > home_page.html
 	xclip -sel clip < home_page.html
 	rm home_page_build.haml
+
+build_podcast_how_to:
+	FILE=podcast_how_to ./add_bootstrap_stylesheets.sh
+	docker run --rm \
+		--volume "${PWD}/insert_images.rb:/insert_images.rb" \
+		--volume "${PWD}/podcast_how_to_build.haml:/podcast_how_to_build.haml" \
+		--volume "${PWD}/home_page/images/red_magic_logo.base64:/red_magic_logo.base64" \
+		ruby ruby insert_images.rb podcast_how_to_build.haml
+	docker run --rm --volume "${PWD}:/app" kalashnikovisme/haml-docker /app/podcast_how_to_build.haml > podcast_how_to.html
+	xclip -sel clip < podcast_how_to.html
+	rm podcast_how_to_build.haml

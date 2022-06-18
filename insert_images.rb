@@ -1,11 +1,6 @@
 text = File.read ARGV[0]
 
 images = [
-  :thread_icon,
-  :get_it_on_google_play,
-  :avatar,
-  :sg_logo_min,
-  :purple_magic_logo,
   :red_magic_logo,
 ]
 images.each do |image|
