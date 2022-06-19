@@ -1,14 +1,16 @@
 .container
   .position-relative.overflow-hidden.p-3.p-md-5.m-md-3.text-center.bg-light
     .row
-      .col-md-1
-        %img{ style: 'width: 200px', src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/podkast-little-size.jpg' }
+      .col-md-4.col-sm-12
+        %img{ style: 'width: 100%', src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/podkast-little-size.jpg' }
       .col-md-7.p-lg-7.mx-auto.my-7
         %h1.display-4.fw-normal
           Уважаемый гость
           %br
           IT Way Podcast
         %p.lead.fw-normal Ты читаешь эту инструкцию, чтобы поучаствовать в очередном выпуске подкаста IT Way.
+        %small
+          Версия 2.0.1
   .row
     .col-lg-4.col-md-6
       .card
@@ -28,7 +30,7 @@
             Подкаст IT Way записывается онлайн.
           %p
             Поэтому важно иметь хороший доступ в интернет. Представь, что готовишься к стриму в Youtube.
-    .col-lg-4.col-md-12
+    .col-lg-4.col-md-6
       .card
         %img.card-img-top{ src: 'data:image/jpeg;base64, #RED_MAGIC_LOGO' }
         .card-body
@@ -153,3 +155,36 @@
                 %h5.mb-1 И САМОЕ ГЛАВНОЕ
               %p.mb-1
                 ОБЯЗАТЕЛЬНО НУЖНО С СОБОЙ ВЗЯТЬ хорошее настроение. Нельзя писать подкасты с плохим настроением.
+  .row.mb-4
+    %h3.mb-4
+      При возникновении технических и других вопросов
+    .col-lg-4.col-sm-4
+      .card
+        %img.card-img-top{ src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/kalashnikovisme.png' }
+        .card-body
+          %h5.card-title
+            @kalashnikovisme
+          %p
+            Паша Калашников
+          %a.btn.btn-primary{ href: 'https://t.me/kalashnikovisme', target: '_blank' }
+            Telegram
+    .col-lg-4.col-sm-4
+      .card
+        %img.card-img-top{ src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/wolf_musing.png' }
+        .card-body
+          %h5.card-title
+            @Wolf_Musing
+          %p
+            Наташа Мусина
+          %a.btn.btn-primary{ href: 'https://t.me/nat_musina', target: '_blank' }
+            Telegram
+    .col-lg-4.col-sm-4
+      .card
+        %img.card-img-top{ src: 'https://raw.githubusercontent.com/Purple-Magic/purple-magic/main/podcast_how_to/darya.bazhenova.png' }
+        .card-body
+          %h5.card-title
+            @daryabazhenova
+          %p
+            Даша Баженова
+          %a.btn.btn-primary{ href: 'https://t.me/daryabazhenova', target: '_blank' }
+            Telegram
