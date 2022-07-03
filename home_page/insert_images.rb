@@ -2,6 +2,10 @@ text = File.read ARGV[0]
 
 images = [
   :red_magic_logo,
+  :purple_magic_logo,
+  :get_it_on_google_play,
+  :thread_icon,
+  :avatar,
 ]
 images.each do |image|
   image_base64 = File.read("#{image}.base64")
