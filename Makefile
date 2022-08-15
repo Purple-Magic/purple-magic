@@ -22,7 +22,7 @@ home_page_build:
 podcast_how_to_build:
 	FILE=podcast_how_to ./add_bootstrap_stylesheets.sh
 	docker run --rm \
-		--volume "${PWD}/insert_images.rb:/insert_images.rb" \
+		--volume "${PWD}/podcast_how_to/insert_images.rb:/insert_images.rb" \
 		--volume "${PWD}/podcast_how_to_build.haml:/podcast_how_to_build.haml" \
 		--volume "${PWD}/home_page/images/red_magic_logo.base64:/red_magic_logo.base64" \
 		ruby ruby insert_images.rb podcast_how_to_build.haml
